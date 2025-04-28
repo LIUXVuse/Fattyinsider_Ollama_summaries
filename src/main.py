@@ -251,10 +251,19 @@ def main():
 
     total_items = len(process_items)
     processed_count = 0
+    skipped_count = 0 # 新增: 計數跳過的項目
     for item in process_items:
         processed_count += 1
         identifier = item['id']
         item_type = item['type']
+
+        # --- 新增：檢查輸出檔案是否已存在 ---
+        expected_output_filename = output_dir / f"{identifier}_摘要.txt"
+        if expected_output_filename.exists():
+            logging.info(f"項目 {processed_count}/{total_items}: ID {identifier} 的摘要檔案已存在 ({expected_output_filename.name})，跳過處理。")
+            skipped_count += 1
+            continue # 跳到下一個項目
+        # --- 檢查結束 ---
 
         logging.info(f"--- 開始處理項目 {processed_count}/{total_items}: ID {identifier} (類型: {item_type}) ---")
 
@@ -293,7 +302,8 @@ def main():
             # 為成功生成的摘要加上標題
             summary_content = f"{identifier}\n\n{summary}"
 
-        output_filename = output_dir / f"{identifier}_摘要.txt"
+        # 使用之前檢查過的檔名變數
+        output_filename = expected_output_filename
         try:
             with open(output_filename, 'w', encoding='utf-8') as f:
                 f.write(summary_content)
@@ -303,7 +313,7 @@ def main():
 
         logging.info(f"--- 完成處理項目 {processed_count}/{total_items}: ID {identifier} ---")
 
-    logging.info("所有項目處理完畢，腳本執行結束。")
+    logging.info(f"所有項目處理完畢，共處理 {total_items} 個項目，其中 {skipped_count} 個項目因摘要已存在而被跳過。腳本執行結束。") # 更新結束訊息
 
 if __name__ == "__main__":
     main() 

@@ -128,7 +128,7 @@
     *   新用戶註冊 Siliconflow 可獲得 2000 萬 Tokens 免費額度。
 ## 示範效果圖
 
-![示範效果圖](https://imgur.com/a/wpafR2I)
+![示範效果圖](https://imgur.com/PSybELE)
 
 
 ---

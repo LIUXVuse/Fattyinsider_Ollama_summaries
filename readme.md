@@ -130,21 +130,21 @@
 ---
 最後更新：2025/04/28
 
+製作者：波尼
+聯絡信箱：liupony2000@gmail.com
 
-製作者: 波尼
-
-聯絡信箱: liupony2000@gmail.com
-
-特別感謝 肥宅老司機優質好節目
-收聽連結：https://open.firstory.me/user/fattyinsider/episodes
-特別感謝 館長Yoan 提供好用的RAG資料庫
-資料庫連結：https://ai.ncurator.com/
-
+特別感謝：
+- 肥宅老司機優質好節目
+  收聽連結：https://open.firstory.me/user/fattyinsider/episodes
+- 館長Yoan 提供好用的RAG資料庫
+  資料庫連結：https://ai.ncurator.com/
 
 ---
-如果您喜歡 肥宅老司機 X Ollama 文件摘要腳本
+如果您喜歡「肥宅老司機 X Ollama 文件摘要腳本」，
 可以斗內到以下地址支持創作：
-USDT (TRC20)
+
+USDT (TRC20)：
 TExxw25EaPKZdKr9uPJT8MLV2zHrQBbhQg
-多幣錢包
+
+多幣錢包：
 liupony2000.x

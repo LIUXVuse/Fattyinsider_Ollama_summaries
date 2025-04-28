@@ -127,7 +127,7 @@
     *   在「館長」資料庫的高級設置中選擇中文模型。
     *   新用戶註冊 Siliconflow 可獲得 2000 萬 Tokens 免費額度。
 ## 示範效果圖
-
+https://imgur.com/PSybELE
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/wpafR2I"><a href="//imgur.com/wpafR2I"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 
